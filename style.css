@@ -1,0 +1,52 @@
+.meme{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .meme img {
+    height: 19rem;
+    object-fit: cover;
+    margin-top:20px;
+  }
+  
+  h2{
+      font-size:1rem;
+  }
+  
+  .button {
+    margin-top:20px;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 13px 20px 13px;
+    outline:none;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      padding: 13px 50px 13px;
+    }
+  }
